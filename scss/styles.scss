@@ -1,0 +1,32 @@
+@import 'utils/mixin';
+@import 'utils/variable';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: $color-primary;
+  font-family: $font-family;
+  @include centerFlexColumn;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: $color-ternary;
+  @include centerFlexRow;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: $borad-2;
+}
